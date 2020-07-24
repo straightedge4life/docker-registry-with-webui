@@ -26,18 +26,6 @@ services:
       registry-net:
         ipv4_address: 172.19.0.3
 
-  my-nginx:
-    image: nginx:latest
-    volumes:
-      - $PWD/conf/nginx.conf:/etc/nginx/nginx.conf:ro
-      - $PWD/conf/ssl:/etc/nginx/conf.d/ssl
-    ports:
-      - "80:80"
-      - "443:443"
-    networks:
-      registry-net:
-        ipv4_address: 172.19.0.4
-
 
 networks:
    registry-net:
