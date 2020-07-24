@@ -3,13 +3,15 @@
 
 docker-compose.yml以及其他配置文件均根据[**hyper/docker-registry-web**](https://hub.docker.com/r/hyper/docker-registry-web)文档制作。
 
-##### 准备:  
+### 准备:  
 *  一个域名，并添加两条A解析到服务器IP，分别用于Registry和Web UI
 *  域名的SSL证书，key+pem
   
-##### 环境要求:  
+### 环境要求:  
 *  docker
 *  docker-compose
+
+### 使用docker-compse搭建
 
 ##### 1. start.sh增加可执行权限并执行  
 ```bash
@@ -35,7 +37,7 @@ cp ./conf/example-nginx.conf ./conf/nginx.conf
 docker-compose up -d
 ```
 
-##### 6.使用  
+### 使用  
 访问Registry域名对仓库进行管理，默认账户为admin admin。  
                   admin账户权限仅为UI_ADMIN,无法在docker进行登录、推送、拉取等操作。  
                   需要添加wirte-all权限。  
