@@ -1,5 +1,7 @@
 ## Docker Registry + Web UI + Nginx   
 
+docker-compose.yml以及其他配置文件均根据[**hyper/docker-registry-web**](https://hub.docker.com/r/hyper/docker-registry-web)文档制作。
+
 ##### 准备:  
 *  一个域名，并添加两条A解析到服务器IP，分别用于Registry和Web UI
 *  域名的SSL证书，key+pem
@@ -13,10 +15,11 @@
 chmod +x ./start.sh
 ./start.sh
 ```
-##### 2.复制nginx.conf  
+##### 2.复制nginx.conf  [**内容取自Docker官方文档**](https://docs.docker.com/registry/recipes/nginx/) 
 ```bash
 cp ./conf/example-nginx.conf ./conf/nginx.conf
 ```
+
 ##### 3.编辑nginx.conf  
 
 分别将22行和66行的`server_name`改为自己的域名。  
