@@ -1,4 +1,5 @@
 ## Docker Registry + Web UI + Nginx   
+使用docker-compose快速搭建私有仓库   
 
 docker-compose.yml以及其他配置文件均根据[**hyper/docker-registry-web**](https://hub.docker.com/r/hyper/docker-registry-web)文档制作。
 
@@ -36,8 +37,8 @@ docker-compose up -d
 
 ##### 6.使用  
 访问Registry域名对仓库进行管理，默认账户为admin admin。  
-admin账户权限仅为UI_ADMIN,无法在docker进行登录、推送、拉取等操作。  
-需要添加wirte-all权限。  
+                  admin账户权限仅为UI_ADMIN,无法在docker进行登录、推送、拉取等操作。  
+                  需要添加wirte-all权限。  
 在本地或其他机器docker login [Registry域名]  
 然后输入账号密码即可，推送镜像的话先打tag，tag格式是:`Registry域名/账号/仓库名:tag`
 举例，我域名是my-registry.com，账号是rob，仓库my-php,版本是7.1.3那tag为:  
