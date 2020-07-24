@@ -1,6 +1,7 @@
 ## Docker Registry + Web UI
 
-  
+docker-compose.yml以及其他配置文件均根据[**hyper/docker-registry-web**](https://hub.docker.com/r/hyper/docker-registry-web)文档制作。
+
 ##### 环境要求:  
 *  docker
 *  docker-compose
