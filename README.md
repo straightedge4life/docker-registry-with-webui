@@ -4,11 +4,13 @@
   
 docker-compose.yml以及其他配置文件均根据[**hyper/docker-registry-web**](https://hub.docker.com/r/hyper/docker-registry-web)文档制作。
 
-##### 环境要求:  
+### 环境要求:  
 *  docker
 *  docker-compose
 
-##### 1. start.sh增加可执行权限并执行  
+### 使用docker-compose搭建
+
+##### 1.start.sh增加可执行权限并执行  
 ```bash
 chmod +x ./start.sh
 ./start.sh
@@ -20,7 +22,7 @@ chmod +x ./start.sh
 docker-compose up -d
 ```
 
-##### 3.使用  
+### 使用  
 访问ip:8080或者localhost:8080进入Web UI对仓库进行管理，默认账户为admin admin。  
 admin账户权限仅为UI_ADMIN,无法在docker进行登录、推送、拉取等操作。  
 需要添加wirte-all权限。  
