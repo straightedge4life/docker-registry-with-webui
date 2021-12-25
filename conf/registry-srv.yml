@@ -10,7 +10,7 @@ http:
 auth:
   token:
     # external url to docker-web authentication endpoint
-    realm: http://47.106.9.8:8080/api/auth
+    realm: http://127.0.0.1:8080/api/auth
     # should be same as registry.name of registry-web
     service: 172.19.0.2:5000
     # should be same as registry.auth.issuer of registry-web
